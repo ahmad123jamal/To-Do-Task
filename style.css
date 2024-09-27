@@ -1,48 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-body {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e0f7fa;
+    color: #fff;
+    width: 100vw;
+    height: 100vh; 
     display: flex;
     justify-content: center;
-}
-
-h1 {
-  background-color: white;
-  margin-top: 10px;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  
+  .cont {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
-.cont {
+  padding: 10px;
+  background-color: crimson;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 12px rgb(212, 52, 52);
+  transition: all ease 0.3s;
+  }
+  
+  .cont:hover {
+    box-shadow: 1px 1px 16px 10px rgba(24, 22, 22, 5);
+  }
+  
+  .todo-cont {
+    width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    margin: 10px;
-    margin-top: 50px;
-    border: 2px solid red;
-}
-
-button {
-    width: 80px;
-    height: 30px;
-    margin: 10px;
-    margin-bottom: 30px;
-    margin-left: 100px;
-}
-
-
-input{
-    margin: 10px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    height: 30px;
-}
-
-
-.cont-2 {
+    gap: 20px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  #addTask {
+    width: 150px;
+    height: 45px;
     padding: 10px;
-    
-}
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(16, 41, 182);
+    color: #fff;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    filter: drop-shadow(1px 1px 2px #df0c0c);
+  }
+  
+  #addTask:hover {
+    background-color: rgb(133, 27, 103);
+    color: #dad9d9;
+    filter: drop-shadow(1px 1px 2px #fff);
+  }
+  
+  input {
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  
+  .cont-2 {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .liElement {
+    width: 80%;
+    list-style: none;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .liToggle {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .hoverEffect:hover {
+    cursor: pointer;
+  }
+  
+  .removeBtnDesign {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: rgb(187, 38, 67);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  
